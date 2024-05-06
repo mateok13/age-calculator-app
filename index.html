@@ -4,62 +4,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Age calculator app</title>
-
+  <link rel="stylesheet" href="reset.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logoPestaña.png">
+  <title>Age calculator app</title>
   <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-  <center>
-    <div class="contenido">
-      <div class="fecha">
-        <div class="dia">
-          <label>DAY</label>
-          <input type="number" name="dia" pattern="[0-9]*" min="1" max="31">
-        </div>
+  <div class="contenido">
+    <div class="fecha">
+      <div class="dia">
+        <label>DAY</label>
+        <input type="number" name="dia" pattern="[0-9]*" min="1" max="31">
       </div>
-      <div class="fecha">
-        <div class="mes">
-          <label>MONTH</label>
-          <input type="number" name="mes" pattern="[0-9]*" min="1" max="12">
-        </div>
+      <div class="mes">
+        <label>MONTH</label>
+        <input type="number" name="mes" pattern="[0-9]*" min="1" max="12">
       </div>
-      <div class="fecha">
-        <div class="anio">
-          <label>YEAR</label>
-          <input type="number" name="anio" pattern="[0-9]*" min="1">
-        </div>
-      </div>
-      <div class="separador" id="calcularButton">
-        <div class="linea"></div>
-        <label class="circulo"></label>
-        <div class="flecha">
-          <label class="izquierda"></label>
-          <label class="palo"></label>
-          <label class="derecha"></label>
-        </div>
-      </div>
-      <div class="edad">
-        <div class="anios">
-          <label class="digitos-anios">--</label>
-          <label class="mensaje">years</label>
-        </div>
-        <div class="meses">
-          <label class="digitos-meses">--</label>
-          <label class="mensaje">months</label>
-        </div>
-        <div class="dias">
-          <label class="digitos-dias">--</label>
-          <label class="mensaje">days</label>
-        </div>
+      <div class="anio">
+        <label>YEAR</label>
+        <input type="number" name="anio" pattern="[0-9]*" min="1">
       </div>
     </div>
-  </center>
+    <div class="linea"></div>
+    <div class="separador" id="calcularButton">
+      <label class="circulo"></label>
+      <div class="flecha">
+        <label class="izquierda"></label>
+        <label class="palo"></label>
+        <label class="derecha"></label>
+      </div>
+    </div>
+    <div class="edad">
+      <div class="anios">
+        <label class="digitos-anios">--</label>
+        <label class="mensaje">years</label>
+      </div>
+      <div class="meses">
+        <label class="digitos-meses">--</label>
+        <label class="mensaje">months</label>
+      </div>
+      <div class="dias">
+        <label class="digitos-dias">--</label>
+        <label class="mensaje">days</label>
+      </div>
+    </div>
+  </div>
   <script src="scripts.js"></script>
 </body>
 
